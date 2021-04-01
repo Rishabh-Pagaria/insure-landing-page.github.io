@@ -1,0 +1,36 @@
+.features{
+    min-height: 70vh;
+    margin-top: 15%;
+    
+}
+.feature-container{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    p{
+        color: #7f7d80;
+    }
+    h1{
+        grid-column: 1/3;
+        color: #2b282f;
+    }
+    .snappy{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .prices,.people{
+        grid-row: 2/3;
+    }
+    .snappy,.people,.prices{
+        padding: 2rem;
+        img,h3{
+            margin-bottom: 30px;
+            color: #2b282f;
+        }
+    }
+}
+.heading{
+    font-size: 2rem;
+}

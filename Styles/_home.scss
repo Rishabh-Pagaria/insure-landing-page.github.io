@@ -1,0 +1,123 @@
+.home{
+    background-color: #2C2640;
+}
+.nav-container{
+    background: #fff;
+    width: 100%;
+    color: #7f7d80;
+    font-family: 'Karla', sans-serif;
+    
+}
+nav{
+    width: 80%;
+    min-height: 1vh;
+    margin: auto;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    ul{
+        display: flex;
+        list-style: none;
+        flex: 1;
+        li{
+            padding: 1.5rem;
+        }
+        .special{
+            border: 1px solid #2C2640;
+            color: #2C2640;
+            transition: 0.4s;
+        }
+        .special:hover{
+            background: #2C2640;
+            color: #fff;
+        }
+    }
+    .logo{
+        flex: 1;
+        img{
+            width: 10vw;
+        }
+    }
+
+}
+.container{
+    min-height: 70vh;
+    display: flex;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    position: relative;
+    .intro-right{
+        width: 20%;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+    }
+    .intro-left{
+        position: absolute;
+        left: 0;
+        width: 10%;
+        top: 60%;
+    }
+ 
+}
+.land{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 10vh;
+    .text{
+        width: 50%;
+    }
+    .intro{
+        img{
+            width: 53rem;
+        }
+    }
+}
+.menu{
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+    display: none;
+    transition: all 7s ease-out;
+    
+    .menu-img{
+        position: absolute;
+        bottom: 0px;
+    }
+   
+    img{
+        width: 100%;
+    }
+    .menu-container{
+        width: 50%;
+        margin: auto;
+        
+        .menu-items{
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    padding: 2rem;
+                }
+                .special{
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+
+}
+.hamburger{
+    display: none;
+}
+
+.menu.open{
+    display: block;
+}
